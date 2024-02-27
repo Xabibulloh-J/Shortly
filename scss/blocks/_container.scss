@@ -1,0 +1,32 @@
+/* container */
+.container {
+   max-width: 1150px;
+   width: 100%;
+   margin-right: auto;
+   margin-left: auto;
+   padding: 0 20px;
+}
+
+@media only screen and (min-width: 320px) {
+   .container {
+      padding: 0 22px;
+   }
+}
+
+@media only screen and (min-width: 375px) {
+   .container {
+      padding: 0 24px;
+   }
+}
+
+@media only screen and (min-width: 600px) {
+   .container {
+      padding: 0 20px;
+   }
+}
+
+@media only screen and (min-width: 1150px) {
+   .container {
+      padding: 0 20px;
+   }
+}

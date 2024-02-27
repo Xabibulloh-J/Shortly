@@ -1,0 +1,388 @@
+/* section one start */
+.intro {
+   position: relative;
+   padding-top: 253px;
+   padding-bottom: 148px;
+   background-image: url("/images/intro-bg-mobile.svg");
+   background-size: 411px 237px;
+   background-repeat: no-repeat;
+   background-position-x: calc(50% + 75px);
+
+   &__title-wrapper {
+      text-align: center;
+   }
+
+   &__title {
+      margin-top: 0;
+      margin-bottom: 15px;
+      font-size: 34px;
+      line-height: 44px;
+      letter-spacing: -1.05px;
+      color: var(--main-title-color);
+   }
+
+   &__desc {
+      margin-top: 0;
+      margin-bottom: 32px;
+      text-align: center;
+      font-size: 13px;
+      font-weight: 500;
+      line-height: 20px;
+      letter-spacing: 0.123px;
+      color: var(--main-desc-color);
+   }
+
+   &__link {
+      @include link-unstyled;
+      display: block;
+      width: 197px;
+      margin: 0 auto;
+      border-radius: 28px;
+      padding: 14px 40px 12px;
+      font-size: 16px;
+      color: #fff;
+      background-color: var(--main-links-bg-color);
+   }
+
+   &__input-wrapper {
+      position: absolute;
+      right: 20px;
+      bottom: -65px;
+      left: 20px;
+      padding: 20px;
+      border-radius: 10px;
+      background-image: url("/images/intro-form-bg-mobile.svg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+   }
+
+   &__input {
+      min-width: 200px;
+      width: 100%;
+      margin-bottom: 16px;
+      padding: 6px 16px;
+      border: none;
+      border-radius: 5px;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 25px;
+      letter-spacing: 0.12px;
+      color: var(--main-title-color);
+      background-color: #fff;
+
+      &::placeholder {
+         font-family: "Poppins";
+         font-size: 12px;
+         font-weight: 500;
+         line-height: 25px;
+         letter-spacing: 0.12px;
+         opacity: 0.5;
+         color: var(--main-title-color);
+      }
+   }
+
+   &__button {
+      display: block;
+      width: 100%;
+      padding-top: 11px;
+      padding-bottom: 10px;
+      border: none;
+      border-radius: 5px;
+      font-family: "Poppins";
+      font-size: 14px;
+      font-weight: 700;
+      color: #fff;
+      background-color: var(--main-links-bg-color);
+   }
+}
+/* section one finish */
+
+/* section one responsive design */
+@media only screen and (min-width: 320px) {
+   .intro {
+      padding-top: 305px;
+      padding-bottom: 148px;
+      background-size: 461px 287px;
+      background-position-x: calc(50% + 80px);
+   
+      &__title {
+         font-size: 39px;
+         line-height: 46px;
+      }
+   
+      &__desc {
+         font-size: 15px;
+         line-height: 25px;
+      }
+   
+      &__link {
+         font-size: 18px;
+      }
+   
+      &__input-wrapper {
+         right: 22px;
+         bottom: -70.5px;
+         left: 22px;
+         padding: 22px;
+      }
+   
+      &__input {
+         font-size: 14px;
+         line-height: 30px;
+   
+         &::placeholder {
+            font-size: 14px;
+            line-height: 30px;
+         }
+      }
+   
+      &__button {
+         font-size: 16px;
+      }
+   }
+}
+
+@media only screen and (min-width: 375px) {
+   .intro {
+      padding-top: 360px;
+      padding-bottom: 148px;
+      background-size: 511px 337px;
+      background-position-x: calc(50% + 90px);
+   
+      &__title {
+         font-size: 42px;
+         line-height: 48px;
+      }
+   
+      &__desc {
+         font-size: 18px;
+         line-height: 30px;
+      }
+   
+      &__link {
+         font-size: 20px;
+      }
+   
+      &__input-wrapper {
+         right: 24px;
+         bottom: -76.5px;
+         left: 24px;
+         padding: 24px;
+      }
+   
+      &__input {
+         font-size: 16px;
+         line-height: 36px;
+   
+         &::placeholder {
+            font-size: 16px;
+            line-height: 36px;
+         }
+      }
+   
+      &__button {
+         font-size: 18px;
+      }
+   }
+}
+
+@media only screen and (min-width: 600px) {
+   .intro {
+      padding-top: 41px;
+      padding-bottom: 200px;
+      background-image: url("/images/intro-bg-desktop.svg");
+      background-size: 411px 280px;
+      background-position-x: calc(50% + 210px);
+
+      &__title-wrapper {
+         min-width: 100px;
+         max-width: 281px;
+         text-align: start;
+      }
+   
+      &__title {
+         font-size: 40px;
+         line-height: 48px;
+      }
+   
+      &__desc {
+         text-align: start;
+         font-size: 18px;
+         line-height: 30px;
+      }
+   
+      &__link {
+         margin-left: 0;
+         font-size: 18px;
+      }
+   
+      &__input-wrapper {
+         right: 24px;
+         bottom: -76.5px;
+         left: 24px;
+         padding: 24px;
+         background-image: url("/images/intro-form-bg-desktop.svg");
+      }
+   
+      &__input {
+         font-size: 16px;
+         line-height: 36px;
+   
+         &::placeholder {
+            font-size: 16px;
+            line-height: 36px;
+         }
+      }
+   
+      &__button {
+         font-size: 18px;
+      }
+   }
+}
+
+@media only screen and (min-width: 750px) {
+   .intro {
+      padding-top: 41px;
+      padding-bottom: 200px;
+      background-size: 533px 350px;
+      background-position-x: calc(50% + 270px);
+
+      &__title-wrapper {
+         min-width: 100px;
+         max-width: 355px;
+      }
+   
+      &__title {
+         font-size: 50px;
+         line-height: 60px;
+      }
+   
+      &__desc {
+         font-size: 18px;
+         line-height: 30px;
+      }
+   
+      &__link {
+         margin-left: 0;
+         font-size: 18px;
+      }
+   
+      &__input-wrapper {
+         display: flex;
+         column-gap: 20px;
+         right: 20px;
+         bottom: -66px;
+         left: 20px;
+         padding: 42px 55px;
+      }
+   
+      &__input {
+         margin-bottom: 0;
+         font-size: 18px;
+   
+         &::placeholder {
+            font-size: 18px;
+         }
+      }
+   
+      &__button {
+         width: 188px;
+      }
+   }
+}
+
+@media only screen and (min-width: 900px) {
+   .intro {
+      padding-top: 51px;
+      padding-bottom: 210px;
+      background-size: 633px 382px;
+      background-position-x: calc(50% + 330px);
+
+      &__title-wrapper {
+         min-width: 100px;
+         max-width: 440px;
+      }
+   
+      &__title {
+         margin-bottom: 5px;
+         font-size: 60px;
+         line-height: 70px;
+      }
+   
+      &__desc {
+         margin-bottom: 34px;
+         font-size: 20px;
+         line-height: 32px;
+      }
+   
+      &__input-wrapper {
+         padding: 42px 55px;
+      }
+   
+      &__input {
+         font-size: 20px;
+   
+         &::placeholder {
+            font-size: 20px;
+         }
+      }
+   }
+}
+
+@media only screen and (min-width: 1150px) {
+   .intro {
+      padding-top: 61px;
+      padding-bottom: 222px;
+      background-size: 733px 482px;
+      background-position-x: calc(50% + 500px);
+
+      &__title-wrapper {
+         min-width: 100px;
+         max-width: 600px;
+      }
+   
+      &__title {
+         font-size: 80px;
+         line-height: 90px;
+      }
+   
+      &__desc {
+         margin-bottom: 38px;
+         font-size: 22px;
+         line-height: 36px;
+      }
+
+      &__link {
+         transition: background-color 0.3s linear;
+
+         &:hover {
+            background-color: #9ae3e3;
+         }
+      }
+   
+      &__input-wrapper {
+         width: 1110px;
+         margin: 0 auto;
+         bottom: -84px;
+         padding: 52px 65px;
+      }
+   
+      &__input {
+         padding: 14px 32px;
+         font-size: 20px;
+   
+         &::placeholder {
+            font-size: 20px;
+         }
+      }
+
+      &__button {
+         transition: background-color 0.3s linear;
+
+         &:hover {
+            background-color: #9ae3e3;
+         }
+      }
+   }
+}

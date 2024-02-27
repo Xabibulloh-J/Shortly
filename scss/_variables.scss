@@ -1,0 +1,17 @@
+$main-title-color: #34313d;
+$main-desc-color: #9e9aa8;
+$main-section-bg-color: #eff1f7;
+$main-links-bg-color: #2bd0d0;
+$main-font-family: "Poppins";
+$main-font-weight-700: 700;
+$main-font-weight-400: 400;
+
+:root {
+   --main-title-color: #{$main-title-color};
+   --main-desc-color: #{$main-desc-color};
+   --main-section-bg-color: #{$main-section-bg-color};
+   --main-links-bg-color: #{$main-links-bg-color};
+   --main-font-family: #{$main-font-family};
+   --main-font-weight-700: #{$main-font-weight-700};
+   --main-font-weight-400: #{$main-font-weight-400};
+}

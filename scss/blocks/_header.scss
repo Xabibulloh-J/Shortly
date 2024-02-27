@@ -1,0 +1,242 @@
+/* header start */
+.site-header {
+   padding-top: 30px;
+   padding-bottom: 20px;
+
+   &__box {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+
+   &__button {
+      width: 24px;
+      height: 21px;
+      border: none;
+      background-color: transparent;
+      background-image: url("../images/hamburg-menu.svg");
+      background-size: 24px 21px;
+      background-repeat: no-repeat;
+      background-position: center;
+      cursor: pointer;
+   }
+
+   &__links-wrapper {
+      display: none;
+      position: absolute;
+      top: 54px;
+      z-index: 5;
+      min-width: 240px;
+      max-width: 276px;
+      width: 100%;
+      border-radius: 10px;
+      padding: 30px 20px;
+      background-color: #3a3054;
+   }
+
+   &__list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      @include list-unstyled;
+      border-bottom: 1px solid #9e9aa8;
+   }
+   
+   &__page-link {
+      @include link-unstyled;
+      margin-bottom: 20px;
+      font-size: 18px;
+      color: #fff;
+   }
+
+   &__signup-wrapper {
+      margin-top: 22px;
+   }
+
+   &__login {
+      @include link-unstyled;
+      display: block;
+      text-align: center;
+      font-size: 18px;
+      color: #fff;
+   }
+
+   &__signup {
+      @include link-unstyled;
+      display: block;
+      margin-top: 20px;
+      padding: 12px 9px;
+      border-radius: 28px;
+      text-align: center;
+      font-size: 18px;
+      color: #fff;
+      background-color: var(--main-links-bg-color);
+   }
+}
+.unscrollbody {
+   overflow: hidden;
+}
+.open-menu .site-header__links-wrapper {
+   display: block;
+}
+.open-menu .site-header__button {
+   background-image: url("../images/hamburg-quit-menu.svg");
+}
+/* header finish */
+
+
+/* header responsive */
+@media only screen and (min-width: 320px) {
+   .site-header {
+      padding-top: 35px;
+      padding-bottom: 23px;
+
+      &__links-wrapper {
+         top: 56px;
+         min-width: 276px;
+         max-width: 327px;
+         padding: 35px 22px;
+      }
+   
+      &__page-link {
+         margin-bottom: 25px;
+      }
+
+      &__signup-wrapper {
+         margin-top: 27px;
+      }
+
+      &__signup {
+         margin-top: 22px;
+      }
+   }
+}
+
+@media only screen and (min-width: 375px) {
+   .site-header {
+      padding-top: 40px;
+
+      &__links-wrapper {
+         top: 57px;
+         min-width: 327px;
+         max-width: 600px;
+         padding: 40px 24px;
+      }
+   
+      &__page-link {
+         margin-bottom: 30px;
+      }
+
+      &__signup-wrapper {
+         margin-top: 32px;
+      }
+
+      &__signup {
+         margin-top: 24px;
+      }
+   }
+}
+
+@media only screen and (min-width: 600px) {
+   .site-header {
+      padding-top: 40px;
+      padding-bottom: 40px;
+   
+      &__box {
+         position: relative;
+         display: flex;
+         justify-content: stretch;
+         align-items: center;
+      }
+   
+      &__button {
+         display: none;
+      }
+   
+      &__links-wrapper {
+         position: static;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         min-width: 422px;
+         max-width: 942px;
+         width: 100%;
+         margin-left: 10px;
+         padding: 0;
+         background-color: transparent;
+      }
+   
+      &__list {
+         display: flex;
+         flex-direction: row;
+         align-items: center;
+         column-gap: 10px;
+         border-bottom: none;
+      }
+      
+      &__page-link {
+         margin-bottom: 0;
+         font-size: 15px;
+         color: var(--main-desc-color);
+      }
+   
+      &__signup-wrapper {
+         margin-top: 0;
+      }
+   
+      &__login {
+         display: inline-block;
+         font-size: 15px;
+         color: var(--main-desc-color);
+      }
+   
+      &__signup {
+         display: inline-block;
+         width: 90px;
+         margin-top: 0;
+         margin-left: 5px;
+         padding: 12px 9px;
+         border-radius: 28px;
+         text-align: center;
+         font-size: 15px;
+      }
+   }
+}
+
+@media only screen and (min-width: 1150px) {
+   .site-header {
+      padding-top: 48px;
+      padding-bottom: 78px;
+   
+      &__links-wrapper {
+         margin-left: 45px;
+      }
+   
+      &__list {
+         column-gap: 30px;
+      }
+
+      &__page-link {
+         transition: color 0.3s linear;
+
+         &:hover {
+            color: var(--main-title-color);
+         }
+      }
+   
+      &__signup-wrapper {
+         margin-top: 0;
+      }
+   
+      &__signup {
+         width: 105px;
+         margin-left: 37px;
+         transition: background-color 0.3s linear;
+
+         &:hover {
+            background-color: #9ae3e3;
+         }
+      }
+   }
+}
